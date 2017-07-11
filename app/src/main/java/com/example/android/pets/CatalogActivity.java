@@ -62,10 +62,11 @@ public class CatalogActivity extends AppCompatActivity {
     private void displayDatabaseInfo() {
 
         Cursor cursor = getContentResolver().query(PetEntry.CONTENT_URI, null, null, null, null);
+        PetCursorAdapter petCursorAdapter = new PetCursorAdapter(this, cursor);
 
         ListView listView = (ListView) findViewById(R.id.list_view);
-        PetCursorAdapter petCursorAdapter = new PetCursorAdapter(this, cursor);
         listView.setAdapter(petCursorAdapter);
+        listView.setEmptyView(findViewById(R.id.empty_view));
     }
 
     /**
