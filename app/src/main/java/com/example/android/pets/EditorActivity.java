@@ -62,7 +62,7 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
      */
     private int mGender = 0;
 
-    Uri uri;
+    private Uri uri;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
