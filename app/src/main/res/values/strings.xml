@@ -92,4 +92,5 @@
     <string name="cancel">Cancel</string>
     <string name="pet_deleted">Pet deleted</string>
     <string name="error_deleting_pet">Error with deleting pet</string>
+    <string name="unknown_breed">Unknown breed</string>
 </resources>
